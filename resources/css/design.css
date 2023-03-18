@@ -1,0 +1,10 @@
+#content,#typing{
+    height: 40vh;
+    width: 95vw;
+    font-size: large;
+    font-weight: bolder;
+}
+table,tr,td{
+    border: solid black 2px;
+    
+}
