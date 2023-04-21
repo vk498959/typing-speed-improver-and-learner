@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <link rel="stylesheet" href="resources/css/design.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <img class="i1" src="./resources/typing_icon.avif">
+        <div class="container1">
+            
+            <div class="title">
+                <h3 class="tle">Typing-Test</h3>
+            </div>
+            <div class="dropdown">
+                <button class="lanbtn1" type="button" data-toggle="dropdown">Language Option <i class="fas fa-caret-down"></i>
+                    </button>
+
+              <div id="dropdown_menu">
+                <ul>
+                    <button class="list1"> English </button>
+                    <button class="list1"> Hindi </button>
+                </ul>
+              </div>
+                    
+                
+            </div>
+            <div class="dropdown">
+                <button class="lanbtn2" type="button" data-toggle="dropdown">Test Time <i class="fas fa-caret-down"></i>
+                  </button>
+
+                  <div id="dropdown_menu2">
+                    <ul>
+                        <button class="list2"> 1 minute test </button>
+                        <button class="list2"> 2 minute test </button>
+                        <button class="list2"> 5 minute test </button>
+                        <button class="list2"> 10 minute test </button>
+                    </ul>
+                  </div>
+            </div>
+            <div class="dropdown">
+                <button class="lanbtn3" type="button" data-toggle="dropdown"> Test Level <i class="fas fa-caret-down"></i>
+                   </span></button>
+
+                   <div id="dropdown_menu3">
+                    <ul>
+                        <button onclick="level('basic')" class="list3"> basic  </button>
+                        <button onclick="level('common_words')" class="list3"> common_words  </button>
+                        <button onclick="level('advance_words')" class="list3"> advance_words  </button>
+                        <button onclick="level('simple_sentences')" class="list3"> simple_sentences  </button>
+                        <button onclick="level('advance_sentences')" class="list3"> advance_sentences </button>
+                        <button onclick="level('essays')" class="list3"> essays </button>
+                    </ul>
+                  </div>
+                
+            </div>
+
+        </div>
+        <div class="container2">
+
+            <div id="header">
+                <table>
+                    <tr>
+                        <td id="time">Time</td>
+                        <td id="speed">Speed</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="content">  Press Enter to start </div>
+            <div class="type">
+                <textarea id="typing"></textarea>
+            </div>
+
+        </div>
+        <div class=" container3">
+            <div class="result">
+                <h2 class="rt"> SCORE</h2>
+            </div>
+            <div class="score1">
+                <h3 class="s1"> >> &nbsp speed &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp : &nbsp &nbsp &nbsp &nbsp 1 WPM </h3>
+            </div>
+            <div class="score2">
+                <h3 class="s1"> >> &nbsp Accuracy &nbsp &nbsp &nbsp &nbsp : &nbsp &nbsp &nbsp &nbsp 1% </h3>
+            </div>
+            <div class="score3">
+                <h3 class="s1"> >> &nbsp Time &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp : &nbsp &nbsp &nbsp &nbsp 1 minute </h3>
+            </div>
+            <div class="score4">
+                <h3 class="s2"> CALCULATION  </h3>
+            </div>
+            <div class="score5">
+                <h3 class="s3"> Net WPM = (Gross WPM - Errors) / time <br>  Gross WPM : (all typed text) / 5 <br>  </h3>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="resources/js/mainlogic.js"></script>
+</body>
+
+</html>
