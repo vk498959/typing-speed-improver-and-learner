@@ -9,10 +9,13 @@ var wrong = "";
 var t = 0;
 var flag = 1;
 var numchar = 0;
-//to generate the random number
-function rand() {
-    return (Math.floor(Math.random() * a.length))
+var data="basic";
+function level(l){
+    data=l;
+    return(data);
 }
+//to generate the random number
+
 //to start up when candidate start typing
 function onstart() {
     setInterval(() => {
@@ -24,6 +27,7 @@ function onstart() {
 
 
 }
+
 //when candidate press the key for typing
 document.addEventListener("keydown", (e) => {
     numchar++;
@@ -33,10 +37,22 @@ document.addEventListener("keydown", (e) => {
             onstart();
             flag = 0;
         }
-        tfetch = a[rand()];
-        typed = type.value;
-        content.innerHTML = tfetch;
-        type.value = "";
+        type.value="";
+        async function level(){
+            var response=await fetch("http://localhost:8000/api/v1",{
+                method:'POST',
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                  },
+                body: JSON.stringify({"level":data})
+            });
+            getdata=await response.json()
+            console.log(await getdata)
+            content.innerHTML=await getdata;
+        }
+        level();
+        
     }
 
 

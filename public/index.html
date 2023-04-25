@@ -11,7 +11,6 @@
 </head>
 
 <body>
-    <script src="resources/db/words.js"></script>
 
     <div class="container">
         <img class="i1" src="./resources/typing_icon.avif">
@@ -52,9 +51,12 @@
 
                    <div id="dropdown_menu3">
                     <ul>
-                        <button class="list3"> Easy  </button>
-                        <button class="list3"> Medium </button>
-                        <button class="list3"> Difficult </button>
+                        <button onclick="level('basic')" class="list3"> basic  </button>
+                        <button onclick="level('common_words')" class="list3"> common_words  </button>
+                        <button onclick="level('advance_words')" class="list3"> advance_words  </button>
+                        <button onclick="level('simple_sentences')" class="list3"> simple_sentences  </button>
+                        <button onclick="level('advance_sentences')" class="list3"> advance_sentences </button>
+                        <button onclick="level('essays')" class="list3"> essays </button>
                     </ul>
                   </div>
                 
@@ -73,7 +75,7 @@
             </div>
             <div id="content">  Press Enter to start </div>
             <div class="type">
-                <textarea id="typing"> write here... </textarea>
+                <textarea id="typing"></textarea>
             </div>
 
         </div>
