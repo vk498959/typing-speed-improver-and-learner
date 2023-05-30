@@ -1,16 +1,20 @@
 {
   "name": "typing-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a typing improver and learner to improve the typing",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"nodemon index.js"
+    "start": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "ejs": "^3.1.9",
     "express": "^4.18.2",
+    "mongodb": "^5.5.0",
+    "mongoose": "^7.1.0",
     "nodemon": "^2.0.22"
-  }
+  },
+  "keywords": []
 }

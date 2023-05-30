@@ -1,0 +1,97 @@
+
+/*=======================================================
+			       BODY
+========================================================*/
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.container{
+    margin: 0%;
+    padding: 0%;
+    background-color: rgb(157, 157, 241);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.card1{
+    width: 27%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12vh;
+    margin-left: 33vw;
+    border-radius: 3%;
+    background-color: rgb(247, 246, 246);
+    box-shadow: 8px 8px 12px rgb(68, 86, 190);
+}
+
+.card2{
+    width: 95%;
+    height: 95%;
+    margin: 40px;     
+}
+
+.button1{
+    width: 23vw;
+    height: 5.8vh;
+    color: beige;
+    background-color: rgb(90, 90, 243);
+    font-weight: bold;
+    border-radius: 10%;
+}
+
+.input{
+    width: 23vw;
+    height: 4.3vh;
+    border-radius: 4%;
+    margin-top: 1.5%;
+}
+
+label{
+    font-weight: bold;
+    color: rgb(105, 105, 105);
+}
+
+.head1{
+    color: rgb(117, 117, 117);
+    font-weight: lighter;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.head2{
+    color: rgb(33, 33, 248);
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head3{
+    color: rgb(108, 108, 109);
+    font-weight: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head4{
+    color: rgb(117, 117, 117);
+    font-weight: lighter;
+    
+
+}
+
+
+  
