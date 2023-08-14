@@ -1,10 +1,10 @@
+
 const express = require("express");
 const app = express();
 const index=require("./routes/index.js");
 const api=require("./routes/api");
-
-
-
+const db=require("./dbfunctions.js");
+//middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
